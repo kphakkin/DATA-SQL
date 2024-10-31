@@ -19,4 +19,4 @@ cursor.execute("CREATE TABLE IF NOT EXISTS movies \
 
 movie_data = pd.read_csv('movies.csv',encoding='latin1')
 
-movie_data.to_sql('movies', connection, if_exists='append',index=False)
+movie_data.to_sql('elokuvat', connection, if_exists='append',index=False)
